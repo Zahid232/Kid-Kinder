@@ -1,0 +1,499 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+:root{
+    --bg-color:#FFFFFF;
+    --second-bg-color:#F5F5DC;
+    --text-color:#000000;
+    --main-color:#088F8F;
+    --big-font:5rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 22px 5% 22px 5%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease ;
+}
+
+.logo{
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-right: 10rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: var(--text-color);
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0 25px;
+    transition: all .45s ease;
+}
+
+.navlist a:hover{
+    color: var(--main-color);
+
+}
+
+.navlist a.active{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+.btn{
+    padding: 5px 10px;
+    font-size: 10px;
+    background-color: var(--main-color);
+    border-radius: 8px;
+    border: none;
+    transition: all .45s ease;
+}
+
+.btn:hover{
+    transform: scale(.9);
+}
+
+section{
+    padding: 160px 15% 120px;
+}
+
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--main-color);
+    padding: 160px 10% 120px;
+}
+
+.home-text{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    color: var(--bg-color);
+}
+
+.home-text h6{
+    margin-bottom: 1.6rem;
+}
+
+.home-text h1{
+    margin-bottom: 1.4rem;
+    font-size: 36px;
+    font-weight: 500;
+}
+.home-text p{
+    font-size: 12px;
+}
+.home-img{
+    border-radius: 50%;
+    width: 200px;
+    margin-left: 30px;
+}
+
+.btn1{
+    width: fit-content;
+    padding: 5px 10px;
+    margin-top: 1.4rem;
+    font-size: 10px;
+    background-color: darkslategray;
+    color: var(--bg-color);
+    border-radius: 8px;
+    border: none;
+    transition: all .45s ease;
+}
+
+.btn1:hover{
+    transform: scale(.9);
+    color:gold;
+}
+
+.facilities{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 5rem;
+    background: var(--bg-color);
+    padding: 100px 10% 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+}
+
+.facility{
+    background-color: var(--second-bg-color);
+    padding: 35px 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items:baseline ;
+}
+
+.div{
+    margin-left: 2rem;
+}
+
+#school{
+    color: var(--main-color);
+}
+
+.best{
+    padding: 70px 10% 120px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.imgg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.teacher-img{
+    width: 350px;
+    margin-right: 50px;
+}
+
+.kid-img{
+    width: 120px;
+}
+
+.text-teacher h6{
+    color: var(--main-color);
+    margin: 10px 1px 20px 0px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.text-teacher h3{
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.kid h6{
+    font-size: 10px;
+    color: #000000;
+}
+
+span{
+    columns: var(--main-color);
+}
+
+.lbtn{
+    width: fit-content;
+    padding: 5px 10px;
+    margin-top: 1.4rem;
+    font-size: 10px;
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    border-radius: 8px;
+    border: none;
+    transition: all .45s ease;
+}
+
+.lbtn:hover{
+    transform: scale(.9);
+    color:black;
+}
+
+
+
+     /* Footer Design */
+
+
+.footer{
+    padding: 10px 5% 120px;
+    position: relative;
+    height: 49vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#21421E;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.upper{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: top;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.upper div{
+    width: 30%;
+    padding: 15px;
+}
+
+.kidkinder h3{
+    padding:10px 0 10px 0;
+}
+
+.kidkinder p{
+    font-size: 11px;
+    margin: 0;
+    padding: 0 0 15px 0;
+    color: whitesmoke;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    margin: 0;
+    padding: 0;
+}
+
+.icons i{
+    color: whitesmoke;
+    margin-right: 5px;
+}
+
+.contact h5{
+    padding-left: 15px;
+    color: var(--main-color);
+    margin: 0;
+}
+
+.address{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.address i{
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    text-align: left;
+    color: var(--main-color);
+}
+
+.contact p{
+    font-size: 10px;
+    margin:0 0 0 15px;
+    padding: 0;
+    color: whitesmoke;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+}
+
+.links h5{
+    padding: 10px 0 5px 0;
+    color: var(--main-color);
+}
+
+.links a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-left: 4px;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+}
+.newsletter h5{
+    padding: 10px 0 10px 0;
+    color: var(--main-color);
+}
+
+.newsletter input{
+    width: 223px;
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--bg-color);
+    margin-bottom: 10px;
+}
+
+.btn22{
+    width: 223px;
+    padding: 5px 10px;
+    margin-top:0;
+    font-size: 10px;
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    border-radius: 8px;
+    border: none;
+    transition: all .45s ease;
+}
+
+.btn22:hover{
+    transform: scale(.9);
+    color:black;
+}
+
+.footer h6{
+    text-align: center;
+    margin: 8px 0 5px 0;
+}
+
+/* media queries */
+
+@media (max-width:600px){
+    .footer{
+        height: 90%;
+        padding-bottom: 0;
+    }
+    .upper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .upper div{
+        width: 90%;
+    }
+    .best{
+        flex-direction: column;
+        margin-top: 390px;
+    }
+    .teacher-img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+    .kid-img{
+        width: 100px;
+        margin-right: 20px;
+    }
+
+    .kid  h6{
+        font-size: 9px;
+    }
+
+    .home-text h6{
+        margin-bottom: 1rem;
+        font-size: 11px;
+    }
+    
+    .home-text h1{
+        margin-bottom: 1rem;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .home-text p{
+        font-size: 9px;
+    }
+    .home-img{
+        border-radius: 50%;
+        width: 150px;
+        margin-left: 20px;
+    }
+    .home{
+        position: relative;
+        height: 100%;
+        width: 100vw;
+        padding: 80px 7% 120px;
+        padding-top: 180px;
+    }
+    #menu-icon{
+        display: block;
+        margin-left: 0;
+        font-size: 28px;
+        margin-right: 0;
+    }
+    .navlist{
+        display: none;
+    }
+
+    .btn{
+        padding: 3px 6px;
+        font-size: 8px;
+        border-radius: 6px;
+        width: fit-content;
+        margin-left: 0;
+    }
+
+    .logo{
+        font-size: 18px;
+        margin-right: 9.1rem;
+    }
+    header{
+        padding: 16px 5% 16px 5%;
+    }  
+    .facilities{
+        gap: 3rem;
+    }
+}
