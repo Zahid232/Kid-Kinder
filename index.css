@@ -321,7 +321,9 @@ span{
     margin-right: 5px;
 }
 
+
 .contact h5{
+    padding: 0;
     padding-left: 15px;
     color: var(--main-color);
     margin: 0;
@@ -499,5 +501,19 @@ span{
     .footer h6{
         font-size: 8px;
         padding: 6px 0px;
+    }
+
+    .ic{
+        margin: 0;
+        padding: 0;
+    }
+
+    .address{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        margin: 0;
+        padding: 0;
     }
 }
