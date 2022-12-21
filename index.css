@@ -412,6 +412,10 @@ span{
     margin: 8px 0 5px 0;
 }
 
+.heart{
+    font-size: 18px;
+}
+
 /* media queries */
 
 @media (max-width:600px){
@@ -518,6 +522,3 @@ span{
     }
 }
 
-.heart{
-    font-size: 18px;
-}
