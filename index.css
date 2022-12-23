@@ -364,7 +364,7 @@ span{
     color: var(--main-color);
 }
 
-.links a{
+.links a,a{
     text-decoration: none;
     color: whitesmoke;
     font-size: 12px;
@@ -521,4 +521,5 @@ span{
         padding: 0;
     }
 }
+
 
