@@ -18,7 +18,7 @@ html, body {
     --bg-color:#FFFFFF;
     --second-bg-color:#F5F5DC;
     --text-color:#000000;
-    --main-color:#088F8F;
+    --main-color:#6DD5ED;
     --big-font:5rem;
     --h2-font:3rem;
     --p-font:1.1rem;
@@ -38,7 +38,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--bg-color);
+    background-color: #DEE3E9;
     padding: 22px 5% 22px 5%;
     border-bottom: 1px solid transparent;
     transition: all .45s ease ;
@@ -110,7 +110,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background: var(--main-color);
+    background: linear-gradient(#2193B0,#6DD5ED);
     padding: 160px 10% 120px;
 }
 
