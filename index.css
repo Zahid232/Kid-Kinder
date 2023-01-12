@@ -10,8 +10,9 @@
 }
 
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+    width: 100%;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
 }
 
 :root{
@@ -38,7 +39,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #DEE3E9;
+    background-color: #FFFFFF;
     padding: 22px 5% 22px 5%;
     border-bottom: 1px solid transparent;
     transition: all .45s ease ;
